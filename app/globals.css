@@ -1,0 +1,88 @@
+@import "tailwindcss";
+
+:root {
+  /* Deep space, matching the game's own background art. */
+  --surface: #0b1226;
+  --surface-raised: #131c38;
+  --edge: #23305a;
+  --ink: #eef1f8;
+  --ink-dim: #98a1bd;
+
+  /* Bubble colours, verbatim from the app's title screen. */
+  --bubble-red: #e94560;
+  --bubble-yellow: #f5b840;
+  --bubble-green: #3ec46d;
+  --bubble-blue: #3f8cff;
+  --bubble-purple: #9b5de5;
+}
+
+@theme inline {
+  --color-surface: var(--surface);
+  --color-surface-raised: var(--surface-raised);
+  --color-edge: var(--edge);
+  --color-ink: var(--ink);
+  --color-ink-dim: var(--ink-dim);
+  --color-bubble-red: var(--bubble-red);
+  --color-bubble-yellow: var(--bubble-yellow);
+  --color-bubble-green: var(--bubble-green);
+  --color-bubble-blue: var(--bubble-blue);
+  --color-bubble-purple: var(--bubble-purple);
+  --font-sans:
+    var(--font-geist-sans), var(--font-noto-sans-kr), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-geist-mono), ui-monospace, monospace;
+}
+
+body {
+  background: var(--surface);
+  color: var(--ink);
+  /* Korean is the primary locale and breaks mid-word without keep-all, which
+     only affects CJK — for the English locale it behaves as normal. The pair
+     keeps 어절 whole but still breaks a word that cannot fit at all, which the
+     8-character 개인정보처리방침 heading needs on a 320px screen. */
+  word-break: keep-all;
+  overflow-wrap: break-word;
+}
+
+/* Markdown-sourced legal pages. */
+.policy h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+}
+
+.policy h2 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-top: 2.25rem;
+  margin-bottom: 0.75rem;
+}
+
+.policy p,
+.policy li {
+  color: var(--ink-dim);
+  line-height: 1.75;
+  margin-bottom: 0.75rem;
+}
+
+.policy ul {
+  list-style: disc;
+  padding-left: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.policy blockquote {
+  border-left: 2px solid var(--edge);
+  padding-left: 1rem;
+  color: var(--ink-dim);
+  margin-bottom: 1.5rem;
+}
+
+.policy strong {
+  color: var(--ink);
+}
+
+.policy a {
+  color: var(--ink);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}

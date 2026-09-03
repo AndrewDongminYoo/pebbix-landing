@@ -1,0 +1,11 @@
+allowBuilds:
+  sharp: true
+  unrs-resolver: true
+
+# Security overrides for versions next pins below the patched releases, kept in
+# step with the sibling landing sites: postcss GHSA (sourceMappingURL file
+# disclosure, <=8.5.17) and sharp/libvips CVEs (<0.35.0). Drop when next's own
+# ranges catch up.
+overrides:
+  postcss: ">=8.5.22"
+  sharp: ">=0.35.0"
