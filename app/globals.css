@@ -8,12 +8,16 @@
   --ink: #eef1f8;
   --ink-dim: #98a1bd;
 
-  /* Bubble colours, verbatim from the app's title screen. */
-  --bubble-red: #e94560;
-  --bubble-yellow: #f5b840;
-  --bubble-green: #3ec46d;
-  --bubble-blue: #3f8cff;
-  --bubble-purple: #9b5de5;
+  /* Bubble colours, sampled from the game's own board sprites in
+     `bubble_shooter/assets/images/bubble_*.png`: the most common opaque colour
+     in each file, which is its fill. Re-sample from there rather than editing
+     by eye, so the tokens and the sprites this site renders cannot drift. */
+  --bubble-red: #fd4f4b;
+  --bubble-yellow: #ffbf47;
+  --bubble-green: #79e2c2;
+  --bubble-blue: #037bfa;
+  --bubble-purple: #bc97e4;
+  --bubble-orange: #fd9260;
 }
 
 @theme inline {
@@ -27,6 +31,7 @@
   --color-bubble-green: var(--bubble-green);
   --color-bubble-blue: var(--bubble-blue);
   --color-bubble-purple: var(--bubble-purple);
+  --color-bubble-orange: var(--bubble-orange);
   --font-sans:
     var(--font-geist-sans), var(--font-noto-sans-kr), ui-sans-serif, system-ui, sans-serif;
   --font-mono: var(--font-geist-mono), ui-monospace, monospace;
