@@ -32,6 +32,7 @@ Keep responsibilities in their current locations:
 - `lib/dictionaries.ts` contains localized interface and marketing copy.
 - `content/legal/` contains the legal Markdown sources.
 - `lib/site.ts` contains public site and store URLs.
+- `assets/` contains game art copied from the game repository, imported through the `@/` alias.
 
 Patch a source file before you patch a consumer.
 Do not edit `.next/`, `out/`, `next-env.d.ts`, or other generated output.

@@ -7,11 +7,11 @@ The marketing surface — screenshots, feature copy, store badges — belongs to
 
 ## What is here
 
-| Route | Source |
-| ----- | ------ |
-| `/{locale}` | `app/[locale]/page.tsx` |
+| Route               | Source                              |
+| ------------------- | ----------------------------------- |
+| `/{locale}`         | `app/[locale]/page.tsx`             |
 | `/{locale}/privacy` | `content/legal/privacy.{locale}.md` |
-| `/{locale}/terms` | `content/legal/terms.{locale}.md` |
+| `/{locale}/terms`   | `content/legal/terms.{locale}.md`   |
 
 Locales are `ko` (default) and `en`; `/` redirects to `/ko`.
 The legal pages are markdown rendered through `components/policy-layout.tsx`, so editing policy means editing markdown and nothing else.
@@ -46,6 +46,16 @@ All three are due before submission.
 
 **If the app ships without one of them, the policy over-declares and has to be trimmed first.**
 Re-check it against the app's real data flow at submission time; `bubble_shooter` issue #37 carries the inventory that check reads from.
+
+## Keeping the gameplay copy honest
+
+The home page publishes the game's own tuning table: the ceiling descends every six shots, the interval tightens to three, the colour count climbs from four to six, and the aim guide degrades from "path and landing" to nothing.
+Those numbers are mirrored from `bubble_shooter/lib/game/bubble_shooter.dart` (`shotsPerDescent`, `minimumShotsPerDescent`, and the `_pressureFor` switch), and the six engraved symbols are read off the sprites in `bubble_shooter/assets/images/`.
+
+The concept spec says these constants ship hard-coded and get retuned in v1.1 from real data, so **re-check the table against the game source before a store submission**; `bubble_shooter` issue #45 requires that in-app strings, screenshots, and descriptions agree.
+
+The art in `assets/` is copied from the game's own `assets/images/` (nebula background and the six bubble sprites, downscaled and quantised).
+It is key art, not gameplay screenshots. Real screenshots belong to issue #45 and land with the store listing.
 
 ## Conventions
 
