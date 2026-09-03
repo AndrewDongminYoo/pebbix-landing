@@ -43,36 +43,73 @@ body {
   overflow-wrap: break-word;
 }
 
+/* A single wash pulled from the nebula art, sitting behind the key art on the
+   right so the panel does not float on a flat field. */
 .hero-backdrop {
-  background:
-    radial-gradient(circle at 16% 28%, rgb(63 140 255 / 0.16), transparent 30rem),
-    radial-gradient(circle at 84% 24%, rgb(155 93 229 / 0.18), transparent 28rem);
+  background: radial-gradient(115% 85% at 78% 6%, rgb(60 41 127 / 0.5), transparent 68%);
 }
 
-.hero-bubble {
-  background-image: radial-gradient(
-    circle at 32% 28%,
-    rgb(255 255 255 / 0.58) 0 8%,
-    transparent 9%
-  );
-  box-shadow:
-    inset -5px -6px 9px rgb(11 18 38 / 0.34),
-    0 8px 18px rgb(0 0 0 / 0.24);
-}
-
-.hero-icon-shell {
-  border-radius: 2rem;
-  padding: 0.5rem;
-  background-color: rgb(19 28 56 / 0.78);
+/* Radius scale for everything added below: surfaces 1.5rem, interactive 0.75rem
+   (Tailwind `rounded-xl`). The app-icon tile keeps an icon-shaped 1.25rem. */
+.key-art {
+  border-radius: 1.5rem;
   box-shadow:
     0 0 0 1px rgb(255 255 255 / 0.08),
-    0 24px 80px rgb(63 140 255 / 0.16);
+    0 32px 90px rgb(11 18 38 / 0.55);
 }
 
-.hero-icon {
+.key-art-tile {
+  border-radius: 1.25rem;
+  box-shadow:
+    0 0 0 1px rgb(255 255 255 / 0.14),
+    0 18px 44px rgb(11 18 38 / 0.5);
+}
+
+.panel {
   border-radius: 1.5rem;
-  outline: 1px solid rgb(255 255 255 / 0.1);
-  outline-offset: -1px;
+  background-color: rgb(19 28 56 / 0.5);
+  box-shadow: 0 0 0 1px rgb(255 255 255 / 0.07);
+}
+
+/* The aim guide the game still grants at this ceiling depth. No background
+   track: the bar is the value, and an empty row means the guide is gone. */
+.aim-bar {
+  display: block;
+  height: 2px;
+  border-radius: 1px;
+  background-color: var(--bubble-yellow);
+}
+
+/* Bubbles adrift in the key art. Motion only, so reduced motion drops it. */
+@media (prefers-reduced-motion: no-preference) {
+  .drift {
+    animation: drift 7s ease-in-out infinite;
+  }
+}
+
+@keyframes drift {
+  50% {
+    transform: translateY(-9px);
+  }
+}
+
+/* Section reveal. The base state is the visible one, so a browser without
+   scroll-driven animations (Firefox today) renders the page complete. */
+@supports (animation-timeline: view()) {
+  @media (prefers-reduced-motion: no-preference) {
+    .reveal {
+      animation: reveal-in linear both;
+      animation-timeline: view();
+      animation-range: entry 5% entry 75%;
+    }
+  }
+}
+
+@keyframes reveal-in {
+  from {
+    opacity: 0;
+    transform: translateY(1.25rem);
+  }
 }
 
 .interactive-link {
