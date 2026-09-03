@@ -15,7 +15,11 @@ export async function generateMetadata({
     title: getDictionary(locale).footer.privacy,
     alternates: {
       canonical: `/${locale}/privacy`,
-      languages: { ko: "/ko/privacy", en: "/en/privacy", "x-default": "/ko/privacy" },
+      languages: {
+        ko: "/ko/privacy",
+        en: "/en/privacy",
+        "x-default": "/ko/privacy",
+      },
     },
   };
 }

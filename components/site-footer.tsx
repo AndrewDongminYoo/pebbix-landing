@@ -29,11 +29,7 @@ export function SiteFooter({ locale }: { locale: Locale }) {
           <Link className={footerNavLinkClass} href={`/${locale}/terms`}>
             {dict.footer.terms}
           </Link>
-          <a
-            className={footerNavLinkClass}
-            href="https://github.com/AndrewDongminYoo"
-            rel="me"
-          >
+          <a className={footerNavLinkClass} href="https://github.com/AndrewDongminYoo" rel="me">
             GitHub
           </a>
           <Link
