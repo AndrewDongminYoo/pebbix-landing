@@ -8,8 +8,14 @@ import { siteUrl } from "@/lib/site";
 import "../globals.css";
 
 const geistSans = Geist({ variable: "--font-geist-sans", subsets: ["latin"] });
-const geistMono = Geist_Mono({ variable: "--font-geist-mono", subsets: ["latin"] });
-const notoSansKr = Noto_Sans_KR({ variable: "--font-noto-sans-kr", subsets: ["latin"] });
+const geistMono = Geist_Mono({
+  variable: "--font-geist-mono",
+  subsets: ["latin"],
+});
+const notoSansKr = Noto_Sans_KR({
+  variable: "--font-noto-sans-kr",
+  subsets: ["latin"],
+});
 
 export function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
@@ -36,6 +42,9 @@ export async function generateMetadata({
       description: dict.meta.description,
       locale: locale === "ko" ? "ko_KR" : "en_US",
     },
+    // The card art is `opengraph-image.png`, which Next wires into og:image.
+    // X falls back to og:image, so this only has to pick the large layout.
+    twitter: { card: "summary_large_image" },
   };
 }
 
