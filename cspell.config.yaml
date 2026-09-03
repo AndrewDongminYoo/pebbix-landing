@@ -1,0 +1,16 @@
+version: "0.2"
+ignorePaths: [pnpm-lock.yaml, pnpm-workspace.yaml]
+dictionaryDefinitions:
+  - name: custom-dictionary
+    path: ./.cspell/custom-dictionary.txt
+    addWords: true
+dictionaries:
+  - custom-dictionary
+  - typescript
+  - node
+  - npm
+  - en-gb
+  - flutter
+words: [pebbix]
+ignoreWords: []
+import: []
