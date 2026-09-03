@@ -18,6 +18,19 @@ The legal pages are markdown rendered through `components/policy-layout.tsx`, so
 
 The app links to `/{locale}/privacy` from its settings screen, choosing the segment the same way it chooses its own locale — Korean for a Korean UI, English otherwise.
 
+## Where it is deployed
+
+Vercel project `pebbix` under `donminzzi-projects`, served at **<https://pebbix.donminzzi.kr>**.
+
+DNS lives in Route 53 (hosted zone `Z02352673DHDBPOH9A6Q7`), not in Vercel — the apex `donminzzi.kr` keeps AWS nameservers.
+The subdomain is a CNAME, matching every sibling site:
+
+```log
+pebbix.donminzzi.kr.  CNAME  e59e9e18f9c5901a.vercel-dns-017.com.
+```
+
+Vercel's CLI suggests an A record instead; the CNAME is what the other six subdomains on this zone use, and it is what was applied here.
+
 ## Running it
 
 ```sh
