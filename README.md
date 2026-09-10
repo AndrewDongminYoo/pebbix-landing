@@ -41,11 +41,13 @@ pnpm build   # static export of all six routes
 
 ## Keeping the policy honest
 
-The privacy policy describes the **v1.0 release configuration**, which includes SDKs the app does not carry yet: Firebase Analytics and Crashlytics (bubble_shooter #40), in-app purchase (#36), and iOS App Tracking Transparency (#38).
-All three are due before submission.
+The privacy policy describes the data flow in the current `bubble_shooter` main branch.
+Before any app release:
 
-**If the app ships without one of them, the policy over-declares and has to be trimmed first.**
-Re-check it against the app's real data flow at submission time; `bubble_shooter` issue #37 carries the inventory that check reads from.
+- Compare the policy with the release candidate.
+- Update the policy before shipping if the release adds or removes a data flow.
+
+`bubble_shooter` issue #37 carries the inventory that this check reads from, including planned declarations that must not appear in the public policy before their implementation ships.
 
 ## Keeping the gameplay copy honest
 
