@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { LocaleLink } from "@/components/locale-link";
 import { getDictionary } from "@/lib/dictionaries";
 import type { Locale } from "@/lib/i18n";
 
@@ -32,13 +33,12 @@ export function SiteFooter({ locale }: { locale: Locale }) {
           <a className={footerNavLinkClass} href="https://github.com/AndrewDongminYoo" rel="me">
             GitHub
           </a>
-          <Link
+          <LocaleLink
             className={footerNavLinkClass}
-            href={dict.footer.languageHref}
-            hrefLang={locale === "ko" ? "en" : "ko"}
-          >
-            {dict.footer.language}
-          </Link>
+            fallbackHref={dict.footer.languageHref}
+            label={dict.footer.language}
+            locale={locale}
+          />
         </nav>
       </div>
       <p className="pb-8 text-center text-xs text-ink-dim/85">© 2026 donminzzi lab</p>
