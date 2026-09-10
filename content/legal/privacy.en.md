@@ -2,7 +2,7 @@
 
 > This is an English translation provided for convenience. In case of any discrepancy, the Korean version prevails.
 
-- **Effective date:** 2026-09-03
+- **Effective date:** 2026-09-10
 - **Publisher:** donminzzi lab, represented by Dongmin Yu (the "Developer")
 - **Contact:** ydm2790@gmail.com
 
@@ -14,8 +14,8 @@ It also covers the information the Developer processes when you visit the offici
 The Service requires no account and no sign-in, and the Developer operates no server of their own.
 The Developer does not sell your personal information.
 
-The Service does use Google AdMob to serve ads and Google Firebase for statistics and error reporting.
-Through those, the information listed in sections 3 and 4 is collected and processed on Google's infrastructure; Google processes it on the Developer's behalf.
+The Service does use Google AdMob to serve ads.
+Through it, the information listed in section 3 is collected and processed on Google's infrastructure under Google's applicable terms and privacy policy.
 
 ## 2. Information stored on your device
 
@@ -34,36 +34,19 @@ Purchase state is held by the store, so it can be recovered through Restore Purc
 The Service serves rewarded and interstitial ads through Google AdMob.
 Google may collect and process the following in the process.
 
-- Advertising identifiers (Android Advertising ID, iOS IDFA)
+- Advertising identifiers when device settings and platform permissions make them available, such as the Android Advertising ID or iOS IDFA
+- Other device or app identifiers (such as the Android app set ID)
 - Approximate location inferred from your IP address
 - Device and app information (model, OS version, app version)
-- Ad impression and click records
+- Usage records such as app launches, taps, video views, ad impressions and clicks
+- SDK crash, performance and diagnostic information such as launch time, hang rate and energy use
 
 Players who purchase the ad-removal product are not shown forced interstitial ads.
 Rewarded ads remain available by the player's own choice, and the information above is processed the same way when one is watched.
 
 See the [Google Privacy Policy](https://policies.google.com/privacy) for details.
 
-## 4. Analytics and crash reporting (Google Firebase)
-
-**Firebase Analytics** — the following is collected for statistical purposes, to improve the Service.
-
-- App instance ID (a per-install device identifier assigned automatically)
-- Advertising identifier (on iOS, only where tracking has been permitted)
-- Approximate location inferred from your IP address
-- Device and app information (model, OS version, app version)
-- Gameplay records: run started, run ended (score, duration, shot count, deepest stack, whether a revive was used, reason), run abandoned, tutorial begun and completed
-- Ad flow: continue offer shown, ad started, reward granted, failures and their reason, interstitial shown
-
-This information is not collected to identify individuals, and the Developer does not join any user identifier to it.
-
-**Firebase Crashlytics** — the following is collected to diagnose crashes and errors.
-
-- Stack trace and app state at the time of the error
-- Device and operating-system information
-- The Crashlytics installation identifier
-
-## 5. Ad consent
+## 4. Ad consent
 
 The Service collects consent for personalised advertising through Google's User Messaging Platform (UMP).
 Where consent is required, the form is shown on first launch, and no ad is requested before it is answered.
@@ -73,39 +56,36 @@ The row appears according to regional requirements; withdrawing consent discards
 
 Declining or withdrawing consent does not restrict gameplay.
 
-**iOS tracking permission** — on iOS, the system's tracking request may appear before an advertising identifier is used.
-Declining does not affect play; ads are then served without personalisation.
+## 5. In-app purchases
 
-## 6. In-app purchases
-
-The Service sells an ad-removal product.
-Payment is handled by the Apple App Store or Google Play, and **the Developer neither collects nor sees any payment method or payment details.**
-The Developer sees only whether the product is owned.
+The Service offers an ad-removal product where the relevant store makes it available.
+Payment is handled by the Apple App Store or Google Play, and **neither the app nor the Developer collects or sees any payment method or payment details.**
+On the device, the app receives the product ID, localised price, purchase or restore status and store-provided verification data.
+This information is not transmitted to a Developer-operated server, and the app stores only whether the ad-removal product is owned.
 
 Payment information is handled under the privacy policy of the respective store.
 
-## 7. Retention
+## 6. Retention
 
 Values stored on your device are deleted with the app.
-Information collected through Firebase and AdMob is retained per Google's policies and the retention period the Developer has configured.
+Information collected through AdMob is retained under Google's applicable policies.
 
-## 8. Children's privacy
+## 7. Children's privacy
 
 The Service is not directed at children under 13, and the Developer does not knowingly collect personal information from children.
 
-## 9. Your rights
+## 8. Your rights
 
 - Deleting the app removes every value stored on your device.
 - Advertising identifiers can be reset or removed at any time in your device settings.
 - Ad consent can be changed or withdrawn from Privacy options in the settings screen.
-- To access or delete information collected through Firebase, contact the address below.
 
-## 10. Changes to this policy
+## 9. Changes to this policy
 
 If this policy changes, the revised policy and its effective date will be posted on this page.
 Any change that widens what is collected will be published before the version making that change ships.
 
-## 11. Contact
+## 10. Contact
 
 - Business name: donminzzi lab
 - Representative: Dongmin Yu

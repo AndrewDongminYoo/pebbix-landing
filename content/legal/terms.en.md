@@ -2,7 +2,7 @@
 
 > This is an English translation provided for convenience. In case of any discrepancy, the Korean version prevails.
 
-- **Effective date:** 2026-09-03
+- **Effective date:** 2026-09-10
 - **Publisher:** donminzzi lab, represented by Dongmin Yu (the "Developer")
 - **Contact:** ydm2790@gmail.com
 
@@ -38,7 +38,7 @@ You agree not to:
 
 ## 5. Paid products
 
-- The Service sells an ad-removal product. It is non-consumable.
+- The Service offers a non-consumable ad-removal product where the relevant store makes it available.
 - Purchases are handled by the Apple App Store or Google Play; the Developer does not handle payment details.
 - Purchase state is held by the store, so it can be recovered through **Restore Purchases** in the app after reinstalling under the same account.
 - Refunds follow each store's refund policy, and refund requests must be made to that store.
@@ -46,8 +46,8 @@ You agree not to:
 
 ## 6. Advertising and third-party services
 
-- The Service serves ads through Google AdMob and uses Google Firebase for statistics and error reporting.
-- How those third parties process information is governed by the [Privacy Policy](/en/privacy) and by each provider's own policy.
+- The Service serves ads through Google AdMob.
+- How this third party processes information is governed by the [Privacy Policy](/en/privacy) and by Google's own policy.
 - The Developer does not select the content of individual ads and is not responsible for the accuracy of information advertisers provide.
 
 ## 7. Disclaimer of warranties
