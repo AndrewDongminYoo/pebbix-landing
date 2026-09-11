@@ -2,7 +2,7 @@
 
 > This is an English translation provided for convenience. In case of any discrepancy, the Korean version prevails.
 
-- **Effective date:** 2026-09-10
+- **Effective date:** 2026-09-11
 - **Publisher:** donminzzi lab, represented by Dongmin Yu (the "Developer")
 - **Contact:** ydm2790@gmail.com
 
@@ -19,14 +19,16 @@ Through it, the information listed in section 3 is collected and processed on Go
 
 ## 2. Information stored on your device
 
-The following values are stored only on your device and are not sent to the Developer.
+The following values are written to the app's local storage and are not sent to the Developer by Pebbix.
 
 - Settings: whether music, sound effects and haptics are enabled
 - Game record: your best score
 - Progress: whether the tutorial has begun, and whether it has been completed
 - Purchase cache: whether the ad-removal product is owned
 
-Deleting the app removes these values from your device.
+Uninstalling the app removes the active copy of these values from the app's storage.
+Your operating system's backup or device-transfer features may retain a platform-managed copy and restore it when you reinstall the app, depending on your device and account settings.
+Pebbix does not send that copy to the Developer.
 Purchase state is held by the store, so it can be recovered through Restore Purchases after reinstalling.
 
 ## 3. Advertising (Google AdMob)
@@ -50,6 +52,7 @@ See the [Google Privacy Policy](https://policies.google.com/privacy) for details
 
 The Service collects consent for personalised advertising through Google's User Messaging Platform (UMP).
 Where consent is required, the form is shown on first launch, and no ad is requested before it is answered.
+When the Service refreshes consent information, UMP sends Google app and device information, approximate location inferred from the request's IP address, and stored consent signals to provide the consent flow.
 
 You can reopen that choice at any time from **Privacy options** in the settings screen, and change or withdraw it.
 The row appears according to regional requirements; withdrawing consent discards any ad already loaded, immediately.
@@ -67,7 +70,9 @@ Payment information is handled under the privacy policy of the respective store.
 
 ## 6. Retention
 
-Values stored on your device are deleted with the app.
+The active app copy of values stored on your device is deleted when you uninstall the app.
+Platform-managed backup or device-transfer copies may remain under your operating system and account settings and may be restored after reinstalling.
+Pebbix does not receive those copies.
 Information collected through AdMob is retained under Google's applicable policies.
 
 ## 7. Children's privacy
@@ -76,7 +81,7 @@ The Service is not directed at children under 13, and the Developer does not kno
 
 ## 8. Your rights
 
-- Deleting the app removes every value stored on your device.
+- Uninstalling the app removes the active copy of locally stored values, while platform-managed backup or device-transfer copies remain subject to your operating system and account settings.
 - Advertising identifiers can be reset or removed at any time in your device settings.
 - Ad consent can be changed or withdrawn from Privacy options in the settings screen.
 
