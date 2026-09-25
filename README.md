@@ -41,13 +41,14 @@ pnpm build   # static export of all six routes
 
 ## Keeping the policy honest
 
-The privacy policy describes the data flow in the current `bubble_shooter` main branch.
+The privacy policy describes the data flow in the current `bubble_shooter` main branch, including Crashlytics diagnostics while Firebase Analytics collection is disabled.
 Before any app release:
 
 - Compare the policy with the release candidate.
-- Update the policy before shipping if the release adds or removes a data flow.
+- Update and publish both localized policies before shipping if the release adds or removes a data flow.
+- Verify the live policy pages and the Play Data Safety and App Store Privacy declarations against the same release candidate.
 
-`bubble_shooter` issue #37 carries the inventory that this check reads from, including planned declarations that must not appear in the public policy before their implementation ships.
+`bubble_shooter` issue #37 carries the inventory and tracks the remaining store-declaration checks. Planned data flows must not appear in the public policy before their implementation ships.
 
 ## Keeping the gameplay copy honest
 
