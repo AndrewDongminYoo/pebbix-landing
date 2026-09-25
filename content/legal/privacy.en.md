@@ -2,7 +2,7 @@
 
 > This is an English translation provided for convenience. In case of any discrepancy, the Korean version prevails.
 
-- **Effective date:** 2026-09-11
+- **Effective date:** 2026-09-25
 - **Publisher:** donminzzi lab, represented by Dongmin Yu (the "Developer")
 - **Contact:** ydm2790@gmail.com
 
@@ -14,8 +14,8 @@ It also covers the information the Developer processes when you visit the offici
 The Service requires no account and no sign-in, and the Developer operates no server of their own.
 The Developer does not sell your personal information.
 
-The Service does use Google AdMob to serve ads.
-Through it, the information listed in section 3 is collected and processed on Google's infrastructure under Google's applicable terms and privacy policy.
+The Service uses Google AdMob to serve ads and Firebase Crashlytics to diagnose crashes and errors.
+The information described in section 3 is processed on Google's infrastructure under Google's applicable terms and privacy policy.
 
 ## 2. Information stored on your device
 
@@ -31,7 +31,9 @@ Your operating system's backup or device-transfer features may retain a platform
 Pebbix does not send that copy to the Developer.
 Purchase state is held by the store, so it can be recovered through Restore Purchases after reinstalling.
 
-## 3. Advertising (Google AdMob)
+## 3. Advertising and crash diagnostics
+
+### Advertising (Google AdMob)
 
 The Service serves rewarded and interstitial ads through Google AdMob.
 Google may collect and process the following in the process.
@@ -47,6 +49,21 @@ Players who purchase the ad-removal product are not shown forced interstitial ad
 Rewarded ads remain available by the player's own choice, and the information above is processed the same way when one is watched.
 
 See the [Google Privacy Policy](https://policies.google.com/privacy) for details.
+
+### Crash diagnostics (Firebase Crashlytics)
+
+On Android and iOS, the Service uses Firebase Crashlytics to find and fix crashes and other app errors.
+Crashlytics collection is enabled without a separate in-app switch.
+Google processes the reports on Firebase infrastructure, and the Developer can review them in Firebase Console.
+Reports and related Firebase Installations and Sessions data may include:
+
+- Crash and developer-reported non-fatal error stack traces, with relevant app state
+- A Crashlytics installation UUID and Firebase installation ID
+- Session identifiers and timestamps, app version, device model and operating system information
+
+Firebase Analytics collection is disabled in this release, so Pebbix does not send gameplay events through Firebase Analytics.
+The AdMob data processing described above is separate from that setting.
+See [Firebase Privacy and Security](https://firebase.google.com/support/privacy) for details.
 
 ## 4. Ad consent
 
@@ -74,6 +91,10 @@ The active app copy of values stored on your device is deleted when you uninstal
 Platform-managed backup or device-transfer copies may remain under your operating system and account settings and may be restored after reinstalling.
 Pebbix does not receive those copies.
 Information collected through AdMob is retained under Google's applicable policies.
+Firebase says Crashlytics keeps crash traces and their associated identifiers, including the Crashlytics installation UUID and Firebase installation ID in those reports, for 90 days before beginning their removal from live and backup systems.
+That 90-day period does not cover records processed separately by Firebase Installations or Sessions.
+Google says data tied to a Firebase installation ID is removed from live and backup systems within 180 days after that ID is deleted; its [Firebase Sessions disclosure](https://firebase.google.com/docs/android/play-data-disclosure#firebase_sessions) does not specify a fixed retention period for Sessions data.
+See [Firebase Privacy and Security](https://firebase.google.com/support/privacy) and [Manage Firebase installations and IDs](https://firebase.google.com/docs/projects/manage-installations) for details.
 
 ## 7. Children's privacy
 
@@ -84,6 +105,9 @@ The Service is not directed at children under 13, and the Developer does not kno
 - Uninstalling the app removes the active copy of locally stored values, while platform-managed backup or device-transfer copies remain subject to your operating system and account settings.
 - Advertising identifiers can be reset or removed at any time in your device settings.
 - Ad consent can be changed or withdrawn from Privacy options in the settings screen.
+- This release has no in-app Crashlytics switch.
+  Uninstalling the app stops future reports from that installation; reports already sent remain subject to Google's retention process.
+  Contact the Developer at the address below with questions about those reports.
 
 ## 9. Changes to this policy
 

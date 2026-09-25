@@ -1,6 +1,6 @@
 # 개인정보처리방침 — Pebbix
 
-- **시행일:** 2026-09-11
+- **시행일:** 2026-09-25
 - **게시자:** 돈민찌랩(donminzzi lab), 대표 유동민 (이하 "개발자")
 - **문의:** ydm2790@gmail.com
 
@@ -12,8 +12,8 @@
 서비스는 계정 가입이나 로그인을 요구하지 않으며, 개발자가 직접 운영하는 서버는 존재하지 않습니다.
 개발자는 이용자의 개인정보를 판매하지 않습니다.
 
-다만 서비스는 광고 게재를 위해 Google AdMob을 이용합니다.
-이 과정에서 아래 3장에 기재한 정보가 수집되어 Google의 인프라에서 처리되며, Google의 관련 약관과 개인정보처리방침이 적용됩니다.
+서비스는 광고를 제공하기 위해 Google AdMob을, 앱의 비정상 종료와 오류를 진단하기 위해 Firebase Crashlytics를 이용합니다.
+아래 3장에 기재한 정보는 Google의 인프라에서 처리되며, Google의 관련 약관과 개인정보처리방침이 적용됩니다.
 
 ## 2. 기기에 저장되는 정보
 
@@ -29,7 +29,9 @@
 Pebbix는 그 사본을 개발자에게 전송하지 않습니다.
 구매 상태는 스토어가 보유하므로, 앱을 다시 설치한 뒤 구매 복원을 통해 되찾을 수 있습니다.
 
-## 3. 광고 (Google AdMob)
+## 3. 광고 및 앱 오류 진단
+
+### 광고 (Google AdMob)
 
 서비스는 Google AdMob을 통해 보상형 광고와 전면 광고를 게재합니다.
 이 과정에서 Google이 다음 정보를 수집·처리할 수 있습니다.
@@ -45,6 +47,21 @@ Pebbix는 그 사본을 개발자에게 전송하지 않습니다.
 다만 이용자가 직접 선택하는 보상형 광고는 계속 이용할 수 있으며, 그 경우 위 정보가 동일하게 처리됩니다.
 
 자세한 내용은 [Google 개인정보처리방침](https://policies.google.com/privacy)을 참고하십시오.
+
+### 앱 오류 진단 (Firebase Crashlytics)
+
+서비스는 Android와 iOS에서 앱의 비정상 종료와 기타 오류를 찾아 수정하기 위해 Firebase Crashlytics를 이용합니다.
+Crashlytics의 정보 수집은 별도의 앱 내 설정 항목 없이 활성화됩니다.
+Google은 전송된 진단 정보를 Firebase 인프라에서 처리하며, 개발자는 Firebase Console에서 보고서를 확인할 수 있습니다.
+오류 보고서와 관련 Firebase Installations 및 Sessions 정보에는 다음 항목이 포함될 수 있습니다.
+
+- 비정상 종료 및 개발자가 보고한 치명적이지 않은 오류의 스택 추적과 관련 앱 상태
+- Crashlytics 설치 UUID와 Firebase 설치 ID
+- 세션 식별자와 발생 시각, 앱 버전, 기기 모델 및 운영체제 정보
+
+이번 버전에서는 Firebase Analytics의 정보 수집이 비활성화되어 있으며, Pebbix는 이를 통해 게임 이용 이벤트를 전송하지 않습니다.
+위에 설명한 AdMob의 정보 처리는 이 설정과 별개입니다.
+자세한 내용은 [Firebase 개인정보 보호 및 보안 안내](https://firebase.google.com/support/privacy)를 참고하십시오.
 
 ## 4. 광고 동의
 
@@ -72,6 +89,10 @@ Pebbix는 그 사본을 개발자에게 전송하지 않습니다.
 다만 플랫폼이 관리하는 백업 또는 기기 이전 사본은 운영체제 및 계정 설정에 따라 남아 있다가 재설치 후 복원될 수 있습니다.
 Pebbix는 그 사본을 수신하지 않습니다.
 AdMob을 통해 수집된 정보의 보유 기간은 Google의 관련 정책을 따릅니다.
+Firebase의 안내에 따르면 Crashlytics는 오류의 스택 추적과 해당 보고서에 포함된 Crashlytics 설치 UUID 및 Firebase 설치 ID 등의 관련 식별자를 90일 동안 보관한 뒤, 운영 시스템과 백업에서 삭제하는 절차를 시작합니다.
+이 90일은 Firebase Installations 또는 Sessions가 별도로 처리하는 기록의 보유 기간을 뜻하지 않습니다.
+Google은 Firebase 설치 ID를 삭제하면 해당 ID에 연결된 데이터를 180일 이내에 운영 시스템과 백업에서 삭제한다고 안내하며, [Firebase Sessions 정보 공개 안내](https://firebase.google.com/docs/android/play-data-disclosure#firebase_sessions)에는 Sessions 데이터의 고정된 보유 기간을 명시하지 않습니다.
+자세한 내용은 [Firebase 개인정보 보호 및 보안 안내](https://firebase.google.com/support/privacy)와 [Firebase 설치 및 ID 관리 안내](https://firebase.google.com/docs/projects/manage-installations)를 참고하십시오.
 
 ## 7. 아동의 개인정보
 
@@ -82,6 +103,9 @@ AdMob을 통해 수집된 정보의 보유 기간은 Google의 관련 정책을 
 - 앱을 삭제하면 로컬에 저장된 값의 활성 사본은 삭제되지만, 플랫폼이 관리하는 백업 또는 기기 이전 사본에는 운영체제 및 계정 설정이 적용됩니다.
 - 광고 식별자는 기기 설정에서 언제든지 재설정하거나 삭제할 수 있습니다.
 - 광고 동의는 설정 화면의 개인정보 설정에서 변경하거나 철회할 수 있습니다.
+- 이번 버전에는 Crashlytics를 끄는 앱 내 설정이 없습니다.
+  앱을 삭제하면 해당 설치본에서 향후 오류 보고서가 전송되지 않지만, 이미 전송된 정보에는 Google의 보유 정책이 적용됩니다.
+  해당 정보에 관한 문의는 아래 연락처로 보내주십시오.
 
 ## 9. 방침의 변경
 
