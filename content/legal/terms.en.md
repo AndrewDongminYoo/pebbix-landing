@@ -2,7 +2,7 @@
 
 > This is an English translation provided for convenience. In case of any discrepancy, the Korean version prevails.
 
-- **Effective date:** 2026-09-10
+- **Effective date:** 2026-09-25
 - **Publisher:** donminzzi lab, represented by Dongmin Yu (the "Developer")
 - **Contact:** ydm2790@gmail.com
 
@@ -13,7 +13,7 @@ By installing or using the Service you agree to them.
 
 - A free single-player puzzle game.
 - It includes rewarded and interstitial advertising.
-- It requires no account and no sign-in; game records are stored only on your device.
+- It requires no account and no sign-in; game records are stored in the app on your device and may be copied by operating-system backup or device transfer.
 - It can be played without an internet connection, though showing ads requires one.
 
 ## 2. Licence
@@ -32,7 +32,7 @@ You agree not to:
 
 ## 4. Game data
 
-- Your best score and settings are stored only on your device; the Developer does not retain them.
+- The app stores your best score and settings on your device; the Developer does not retain them.
 - Deleting the app removes its active copy of that data.
   An operating-system backup or device transfer may preserve and restore a copy, as explained in the [Privacy Policy](/en/privacy).
 - The Developer is not responsible for records lost through a device change or reinstallation.
