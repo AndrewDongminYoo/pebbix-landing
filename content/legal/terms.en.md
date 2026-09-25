@@ -12,9 +12,9 @@ By installing or using the Service you agree to them.
 ## 1. What the Service is
 
 - A free single-player puzzle game.
-- It includes rewarded and interstitial advertising.
+- Some distributed versions include rewarded and interstitial advertising; ad-free versions do not show ads.
 - It requires no account and no sign-in; game records are stored in the app on your device and may be copied by operating-system backup or device transfer.
-- It can be played without an internet connection, though showing ads requires one.
+- It can be played without an internet connection; versions with ads need a connection to show them.
 
 ## 2. Licence
 
@@ -39,16 +39,16 @@ You agree not to:
 
 ## 5. Paid products
 
-- The Service offers a non-consumable ad-removal product where the relevant store makes it available.
+- Versions with advertising may offer a non-consumable ad-removal product where the relevant store makes it available. Ad-free versions do not offer it.
 - Purchases are handled by the Apple App Store or Google Play; the Developer does not handle payment details.
-- Purchase state is held by the store, so it can be recovered through **Restore Purchases** in the app after reinstalling under the same account.
+- In versions with purchases, purchase state is held by the store and can be recovered through **Restore Purchases** in the app after reinstalling under the same account.
 - Refunds follow each store's refund policy, and refund requests must be made to that store.
 - The ad-removal product removes forced interstitial ads. Rewarded ads remain available by your own choice.
 
 ## 6. Advertising and third-party services
 
-- The Service serves ads through Google AdMob.
-- The Service uses Firebase Crashlytics to diagnose crashes and app errors.
+- Versions with advertising serve ads through Google AdMob.
+- Versions with Firebase Crashlytics use it to diagnose crashes and app errors.
 - How these services process information is described in the [Privacy Policy](/en/privacy) and Google's applicable policies.
 - The Developer does not select the content of individual ads and is not responsible for the accuracy of information advertisers provide.
 
