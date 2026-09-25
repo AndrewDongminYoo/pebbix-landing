@@ -91,7 +91,10 @@ The active app copy of values stored on your device is deleted when you uninstal
 Platform-managed backup or device-transfer copies may remain under your operating system and account settings and may be restored after reinstalling.
 Pebbix does not receive those copies.
 Information collected through AdMob is retained under Google's applicable policies.
-Firebase says Crashlytics keeps crash traces and associated identifiers for 90 days before beginning their removal from live and backup systems.
+Firebase says Crashlytics keeps crash traces and their associated identifiers, including the Crashlytics installation UUID and Firebase installation ID in those reports, for 90 days before beginning their removal from live and backup systems.
+That 90-day period does not cover records processed separately by Firebase Installations or Sessions.
+Google says data tied to a Firebase installation ID is removed from live and backup systems within 180 days after that ID is deleted; its [Firebase Sessions disclosure](https://firebase.google.com/docs/android/play-data-disclosure#firebase_sessions) does not specify a fixed retention period for Sessions data.
+See [Firebase Privacy and Security](https://firebase.google.com/support/privacy) and [Manage Firebase installations and IDs](https://firebase.google.com/docs/projects/manage-installations) for details.
 
 ## 7. Children's privacy
 

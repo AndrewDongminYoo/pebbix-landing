@@ -89,7 +89,10 @@ Google은 전송된 진단 정보를 Firebase 인프라에서 처리하며, 개�
 다만 플랫폼이 관리하는 백업 또는 기기 이전 사본은 운영체제 및 계정 설정에 따라 남아 있다가 재설치 후 복원될 수 있습니다.
 Pebbix는 그 사본을 수신하지 않습니다.
 AdMob을 통해 수집된 정보의 보유 기간은 Google의 관련 정책을 따릅니다.
-Firebase의 안내에 따르면 Crashlytics는 오류의 스택 추적과 관련 식별자를 90일 동안 보관한 뒤, 운영 시스템과 백업에서 삭제하는 절차를 시작합니다.
+Firebase의 안내에 따르면 Crashlytics는 오류의 스택 추적과 해당 보고서에 포함된 Crashlytics 설치 UUID 및 Firebase 설치 ID 등의 관련 식별자를 90일 동안 보관한 뒤, 운영 시스템과 백업에서 삭제하는 절차를 시작합니다.
+이 90일은 Firebase Installations 또는 Sessions가 별도로 처리하는 기록의 보유 기간을 뜻하지 않습니다.
+Google은 Firebase 설치 ID를 삭제하면 해당 ID에 연결된 데이터를 180일 이내에 운영 시스템과 백업에서 삭제한다고 안내하며, [Firebase Sessions 정보 공개 안내](https://firebase.google.com/docs/android/play-data-disclosure#firebase_sessions)에는 Sessions 데이터의 고정된 보유 기간을 명시하지 않습니다.
+자세한 내용은 [Firebase 개인정보 보호 및 보안 안내](https://firebase.google.com/support/privacy)와 [Firebase 설치 및 ID 관리 안내](https://firebase.google.com/docs/projects/manage-installations)를 참고하십시오.
 
 ## 7. 아동의 개인정보
 
