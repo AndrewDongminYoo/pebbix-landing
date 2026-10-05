@@ -64,3 +64,9 @@ It is key art, not gameplay screenshots. Real screenshots belong to issue #45 an
 
 Shaped after the sibling landing sites — `prism-defense-landing`, `quest-keeper-landing`, `ttush-push-landing` — which use the same `content/legal/*.{en,ko}.md` layout served from `app/[locale]/`.
 The `pnpm-workspace.yaml` security overrides are carried over from those sites for the same reasons noted there.
+
+## License
+
+Copyright (c) 2026 Dongmin Yu. All rights reserved.
+The source is public for reference only and is not open source.
+Using, copying, modifying, or redistributing it requires written permission from the copyright holder; see [`LICENSE`](LICENSE).
