@@ -18,6 +18,10 @@ The legal pages are markdown rendered through `components/policy-layout.tsx`, so
 
 The app links to `/{locale}/privacy` from its settings screen, choosing the segment the same way it chooses its own locale — Korean for a Korean UI, English otherwise.
 
+`public/app-ads.txt` names the AdMob publisher ahead of any ad-serving Pebbix build; it is AdMob verification, not site content.
+AdMob reads it from the developer website each store lists, one subdomain level deep, so it belongs on this host rather than on `donminzzi.kr`.
+Publishing it does not make the app serve ads, so the privacy policy's claims stand; the policy changes in the release that initializes the ad SDK.
+
 ## Where it is deployed
 
 Vercel project `pebbix` under `donminzzi-projects`, served at **<https://pebbix.donminzzi.kr>**.
