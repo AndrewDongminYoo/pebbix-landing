@@ -31,7 +31,7 @@ export type Dictionary = {
     };
     closing: { heading: string; body: string; scope: string };
   };
-  store: { pending: string; appStore: string; playStore: string };
+  source: { status: string; browse: string; license: string; licensing: string };
   footer: {
     developer: string;
     contact: string;
@@ -50,7 +50,7 @@ const dictionaries: Record<Locale, Dictionary> = {
     meta: {
       title: "Pebbix",
       description:
-        "천장이 내려오기 전에 같은 색 버블 셋을 맞춰 터뜨리는 싱글 플레이 우주 퍼즐 게임.",
+        "스토어용 개발을 종료한 싱글 플레이 우주 퍼즐 게임 Pebbix. 공개 소스와 라이선스, 기존 이용자를 위한 문의 및 정책 안내.",
     },
     home: {
       tagline: "같은 색 셋을 맞춰 터뜨리세요.",
@@ -125,13 +125,16 @@ const dictionaries: Record<Locale, Dictionary> = {
         heading: "로그인 없이, 기기 안에서",
         body: "계정을 만들 필요가 없고 최고 점수는 기기에만 남습니다. 한국어와 영어를 지원하며 기기 언어를 따라갑니다. 음악과 효과음, 진동은 각각 끌 수 있습니다.",
         scope:
-          "v1.0은 끝없는 서바이벌 한 모드입니다. 레벨 모드와 리더보드, 클라우드 저장은 아직 들어 있지 않습니다.",
+          "끝없는 서바이벌 한 모드를 제공합니다. 기존 설치 이용자를 위한 문의, 개인정보처리방침, 이용약관은 이 사이트에서 계속 확인할 수 있습니다.",
       },
     },
-    store: {
-      pending: "App Store와 Google Play 출시를 준비하고 있습니다.",
-      appStore: "App Store에서 받기",
-      playStore: "Google Play에서 받기",
+    source: {
+      status:
+        "스토어용 개발을 종료했습니다. Android 앱은 Google Play에서 신규 배포를 종료할 예정입니다. 게임 소스는 GitHub에서 확인할 수 있습니다.",
+      browse: "GitHub에서 소스 보기",
+      license: "라이선스 확인",
+      licensing:
+        "게임 코드의 기본 라이선스는 PolyForm Noncommercial이며, 명시된 일부 파일에만 MIT가 적용됩니다. 문서, 그림, 외부 자료에는 별도 조건이 적용되므로 재사용 전에 라이선스를 확인해 주세요.",
     },
     footer: {
       developer: "돈민찌랩 · 대표 유동민",
@@ -146,7 +149,7 @@ const dictionaries: Record<Locale, Dictionary> = {
     meta: {
       title: "Pebbix",
       description:
-        "A single-player space puzzle about matching three or more bubbles of the same colour before the ceiling closes in.",
+        "Pebbix is a single-player space puzzle with store development discontinued. View the source, licensing terms, and support and policies for existing players.",
     },
     home: {
       tagline: "Match three of a colour to pop them.",
@@ -221,13 +224,16 @@ const dictionaries: Record<Locale, Dictionary> = {
         heading: "No sign-in, nothing leaves the device",
         body: "There is no account to create, and your best score stays on the device. Korean and English are supported, following the device language. Music, sound effects, and haptics each turn off on their own.",
         scope:
-          "v1.0 is one endless survival mode. Level mode, leaderboards, and cloud save are not in it yet.",
+          "The game has one endless survival mode. Contact details, the Privacy Policy, and the Terms of Service remain available on this site for existing players.",
       },
     },
-    store: {
-      pending: "Coming to the App Store and Google Play.",
-      appStore: "Get it on the App Store",
-      playStore: "Get it on Google Play",
+    source: {
+      status:
+        "Store development has ended. The Android app is scheduled to be unpublished from Google Play. You can view the game source on GitHub.",
+      browse: "View source on GitHub",
+      license: "Read the license",
+      licensing:
+        "Game code uses PolyForm Noncommercial by default. Only specifically designated files use MIT. Documentation, artwork, and third-party material have separate terms. Check the license before reusing any material.",
     },
     footer: {
       developer: "donminzzi lab · Dongmin Yu",
