@@ -1,9 +1,14 @@
 # pebbix-landing
 
-The public site for **Pebbix**, the bubble-shooter puzzle game built in [`bubble_shooter`](https://github.com/AndrewDongminYoo/bubble_shooter).
+The public site for **Pebbix**, a bubble-shooter puzzle game whose selected source snapshot is published at [`AndrewDongminYoo/pebbix`](https://github.com/AndrewDongminYoo/pebbix).
 
-It exists first to give the app and the store listings a public policy URL to point at (bubble_shooter issue #37).
-The marketing surface — screenshots, feature copy, store badges — belongs to issue #45 and lands with the listing.
+Store development has ended.
+The operator plans to unpublish the Android app from Google Play after the source transition; this site does not claim that unpublication has happened.
+The home pages point to the game source and its [mixed-license terms](https://github.com/AndrewDongminYoo/pebbix/blob/main/LICENSE).
+The game code defaults to PolyForm Noncommercial, with exact MIT exceptions and separate terms for prose, artwork, and third-party material.
+This does not change the landing repository's own license below.
+Contact details and both localized privacy and terms routes remain available for existing installations.
+No service or stored data is removed by this website update.
 
 ## What is here
 
@@ -40,7 +45,7 @@ Vercel's CLI suggests an A record instead; the CNAME is what the other six subdo
 ```sh
 pnpm install
 pnpm dev     # http://localhost:3000
-pnpm build   # static export of all six routes
+pnpm build   # production build of both locales and their policy routes
 ```
 
 ## Keeping the policy honest
