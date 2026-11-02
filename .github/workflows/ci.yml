@@ -34,7 +34,7 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          pnpm start --port 4179 > "$RUNNER_TEMP/pebbix-next-server.log" 2>&1 &
+          node node_modules/next/dist/bin/next start --port 4179 > "$RUNNER_TEMP/pebbix-next-server.log" 2>&1 &
           server_pid=$!
           trap 'kill "$server_pid" 2>/dev/null || true' EXIT
           for attempt in $(seq 1 30); do
