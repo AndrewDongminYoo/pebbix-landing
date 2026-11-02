@@ -7,5 +7,11 @@ allowBuilds:
 # disclosure, <=8.5.17) and sharp/libvips CVEs (<0.35.0). Drop when next's own
 # ranges catch up.
 overrides:
+  # GHSA-g3hv-75wg-m249: these consumers retain named minimatch APIs.
+  # Callable minimatch 3 consumers remain pending upstream compatibility.
+  "@eslint/config-array@0>minimatch": ^11.0.1
+  "@typescript-eslint/typescript-estree@8>minimatch": ^11.0.1
+  "eslint@10>minimatch": ^11.0.1
+  "zod@4": ^4.6.6 # GHSA-mrhx-c7xc-m3w5
   postcss: ">=8.5.22"
   sharp: ">=0.35.0"
