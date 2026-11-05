@@ -2,7 +2,7 @@
 
 > This is an English translation provided for convenience. In case of any discrepancy, the Korean version prevails.
 
-- **Effective date:** 2026-09-25
+- **Effective date:** 2026-11-06
 - **Publisher:** donminzzi lab, represented by Dongmin Yu (the "Developer")
 - **Contact:** ydm2790@gmail.com
 
@@ -20,6 +20,7 @@ By installing or using the Service you agree to them.
 
 The Developer grants you a non-transferable, non-exclusive right to use the Service for personal, non-commercial purposes.
 Rights in the Service and in the graphics, audio, code and trade marks it contains remain with the Developer or the respective rights holders.
+Use of the separately published [source repository](https://github.com/AndrewDongminYoo/pebbix) is governed by its [file-specific licenses and exceptions](https://github.com/AndrewDongminYoo/pebbix/blob/main/LICENSE). These terms do not restrict use, copying, modification or redistribution expressly permitted by those licenses.
 
 ## 3. Your obligations
 
@@ -42,7 +43,7 @@ You agree not to:
 - Versions with advertising may offer a non-consumable ad-removal product where the relevant store makes it available. Ad-free versions do not offer it.
 - Purchases are handled by the Apple App Store or Google Play; the Developer does not handle payment details.
 - In versions with purchases, purchase state is held by the store and can be recovered through **Restore Purchases** in the app after reinstalling under the same account.
-- Refunds follow each store's refund policy, and refund requests must be made to that store.
+- Refunds are handled under applicable law and the policies of the store where you purchased. See [Apple's refund guidance](https://support.apple.com/118223) or [Google Play's refund guidance](https://support.google.com/googleplay/answer/2479637?hl=en). Contact the Developer below if you have a purchase or restoration problem.
 - The ad-removal product removes forced interstitial ads. Rewarded ads remain available by your own choice.
 
 ## 6. Advertising and third-party services
@@ -77,6 +78,7 @@ Continuing to use the Service after the effective date constitutes agreement to 
 ## 11. Governing law and disputes
 
 These terms are governed by the laws of the Republic of Korea.
+Nothing in these terms, including the choice of law, jurisdiction and limitations of liability, excludes or limits rights or remedies under mandatory consumer-protection laws that apply to you.
 Disputes arising from use of the Service will first be addressed through the contact below, and failing agreement, before the court with jurisdiction under the Korean Civil Procedure Act.
 
 ## 12. Contact
