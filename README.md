@@ -3,7 +3,7 @@
 The public site for **Pebbix**, a bubble-shooter puzzle game whose selected source snapshot is published at [`AndrewDongminYoo/pebbix`](https://github.com/AndrewDongminYoo/pebbix).
 
 Store development has ended.
-The operator plans to unpublish the Android app from Google Play after the source transition; this site does not claim that unpublication has happened.
+Dongmin Yu plans to unpublish the Android app from Google Play after the source transition; this site does not claim that unpublication has happened.
 The home pages point to the game source and its [mixed-license terms](https://github.com/AndrewDongminYoo/pebbix/blob/main/LICENSE).
 The game code defaults to PolyForm Noncommercial, with exact MIT exceptions and separate terms for prose, artwork, and third-party material.
 This does not change the landing repository's own license below.

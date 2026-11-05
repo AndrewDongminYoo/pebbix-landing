@@ -7,7 +7,7 @@ More specific nested `AGENTS.md` files override this file for their subtree.
 
 This repository contains the public website for the Pebbix game in `../bubble_shooter`.
 Treat the game repository as a separate Git scope.
-Do not modify it unless the operator explicitly includes it in the task.
+Do not modify it unless the user explicitly includes it in the task.
 
 ## Product Boundary
 
@@ -75,9 +75,9 @@ Do not create tool-branded documentation directories.
 Use absolute repository paths with `git -C` for Git commands.
 Treat unexplained modifications as author-unknown.
 Do not restore, delete, stage, or overwrite them.
-Do not commit, push, deploy, or publish unless the operator explicitly requests that action.
+Do not commit, push, deploy, or publish unless the user explicitly requests that action.
 
-Do not read, print, or commit `.env.local` or `.vercel/` contents unless the task requires a specific field and the operator authorizes that scope.
+Do not read, print, or commit `.env.local` or `.vercel/` contents unless the task requires a specific field and the user authorizes that scope.
 Never expose credentials or deployment tokens in logs, documentation, or responses.
 
 ## Verification
