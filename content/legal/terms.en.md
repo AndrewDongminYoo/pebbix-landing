@@ -2,7 +2,7 @@
 
 > This is an English translation provided for convenience. In case of any discrepancy, the Korean version prevails.
 
-- **Effective date:** 2026-11-05
+- **Effective date:** 2026-11-06
 - **Publisher:** donminzzi lab, represented by Dongmin Yu (the "Developer")
 - **Contact:** ydm2790@gmail.com
 
